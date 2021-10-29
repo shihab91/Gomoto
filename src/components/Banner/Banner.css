@@ -1,0 +1,39 @@
+.banner {
+  background: url("http://gomoto.like-themes.com/wp-content/uploads/2019/06/footer-bg.png");
+}
+
+.banner-heading {
+  font-size: 70px;
+  font-weight: 700;
+}
+.banner-heading span {
+  color: var(--yellow-color);
+}
+/* .banner-text {
+  width: 40%;
+} */
+.banner-text p {
+  font-size: 18px;
+  color: rgb(58, 58, 58);
+  font-family: "Catamaran", sans-serif;
+  letter-spacing: 1px;
+  line-height: 30px;
+}
+.banner-img {
+  width: 100%;
+}
+.button {
+  font-size: 20px;
+  border: none;
+  outline: none;
+  background-color: var(--yellow-color);
+  border-radius: 35px;
+  padding: 10px 35px;
+  font-weight: 600;
+  transition: all 0.4s;
+  font-family: "Catamaran", sans-serif;
+}
+.button:hover {
+  background-color: var(--black-color);
+  color: white;
+}
