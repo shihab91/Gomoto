@@ -32,6 +32,7 @@
   font-weight: 600;
   transition: all 0.4s;
   font-family: "Catamaran", sans-serif;
+  letter-spacing: 1px;
 }
 .button:hover {
   background-color: var(--black-color);

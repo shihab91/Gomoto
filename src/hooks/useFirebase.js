@@ -11,12 +11,14 @@ const googleAuthProvider = new GoogleAuthProvider();
 
 const useFirebase = () => {
   const [user, setUser] = useState({});
+  const [error, setError] = useState("");
   const handleGoogleSignIn = () => {
     signInWithPopup(auth, googleAuthProvider)
       .then(result => setUser(result.user))
+      .catch(err => setError(err))
   }
   const handleSingOut = () => {
-    signOut(auth).then(() => { console.log("signOut successful"); })
+    signOut(auth).then(() => { setUser({}) })
   }
   useEffect(() => {
     onAuthStateChanged(auth, user => {
@@ -26,6 +28,6 @@ const useFirebase = () => {
       else (setUser({}))
     })
   }, [])
-  return { handleGoogleSignIn, handleSingOut, user, setUser }
+  return { handleGoogleSignIn, handleSingOut, user, setUser, error }
 }
 export default useFirebase;

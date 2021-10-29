@@ -11,3 +11,11 @@
 .links a:hover {
   color: var(--yellow-color);
 }
+.user-photo {
+  width: 45px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.user-info {
+  font-family: "Heebo", sans-serif;
+}

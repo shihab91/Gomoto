@@ -1,0 +1,32 @@
+.contact > div {
+  background-color: var(--yellow-color);
+  font-family: "Catamaran", sans-serif;
+  padding: 10px 30px;
+  border-radius: 10px;
+  color: var(--black-color);
+}
+.contact div p {
+  font-size: 20px;
+}
+.footer-text {
+  letter-spacing: 0.8px;
+  line-height: 30px;
+}
+.footer-icon {
+  margin-left: 20px;
+  font-size: 40px;
+  color: var(--yellow-color);
+  padding: 8px;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.footer-icon:hover {
+  color: white;
+  border-radius: 50%;
+  background: var(--yellow-color);
+}
+.email-icon,
+.call-icon {
+  width: 60px;
+  height: 60px;
+}

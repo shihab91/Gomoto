@@ -1,0 +1,37 @@
+.login {
+  height: 80vh;
+}
+.login-card {
+  max-width: 500px;
+  height: 400px;
+  font-family: "Heebo", sans-serif;
+}
+.login-form {
+  margin-top: 50px;
+}
+.login-btn {
+  line-height: 40px;
+  width: 70%;
+  border-radius: 30px;
+  font-size: 20px;
+  border: 2px solid rgb(221, 221, 221);
+  background: none;
+  transition: all 0.3s;
+  padding: 5px 0;
+}
+.login-btn:hover {
+  background: var(--yellow-color);
+}
+.login-btn svg {
+  font-size: 35px;
+  margin-right: 10px;
+  margin-top: -5px;
+}
+.login-form p {
+  font-size: 18px;
+  /* font-weight: 600; */
+}
+.login-form p a {
+  color: var(--yellow-color);
+  letter-spacing: 1px;
+}

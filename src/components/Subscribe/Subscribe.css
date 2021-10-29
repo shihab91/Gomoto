@@ -1,0 +1,29 @@
+.subscribe-img {
+  border-radius: 20px;
+  width: 350px;
+}
+.sub-text-img {
+  width: 700px;
+}
+.subscribe-text {
+  width: 300px;
+}
+.subscribe-text h1 {
+  font-family: "Heebo", sans-serif;
+  font-size: 45px;
+  font-weight: 700;
+}
+.input h3 {
+  font-family: "Heebo", sans-serif;
+  font-weight: 700;
+  color: var(--black-color);
+}
+.input input[type="email"] {
+  outline: none;
+  line-height: 40px;
+  padding: 3px 10px;
+  margin-right: 5px;
+  width: 300px;
+  border-radius: 30px;
+  border: 2px solid rgb(237, 237, 237);
+}
