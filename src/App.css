@@ -1,7 +1,9 @@
 .App {
   text-align: center;
 }
-
+:root {
+  --yellow-color: #f7b614;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
