@@ -4,17 +4,22 @@ import {
   Redirect
 } from "react-router-dom";
 import useAuth from '../../hooks/useAuth';
-import { PushSpinner } from "react-spinners-kit";
+import { ClapSpinner } from "react-spinners-kit";
+import { Container } from 'react-bootstrap';
 
 const PrivateRoute = ({ children, ...rest }) => {
   const { user, isLoading } = useAuth();
   const loading = true;
   if (isLoading) {
-    <PushSpinner
-      size={30}
-      color="#686769"
-      loading={loading}
-    />
+    return (
+      <Container className="d-flex justify-content-center align-items-center my-5">
+        <ClapSpinner
+          size={50}
+          color="#66fe89"
+          loading={loading}
+        />
+      </Container>
+    )
   }
   return (
     <Route

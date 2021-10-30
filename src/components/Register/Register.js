@@ -2,12 +2,11 @@ import React from 'react';
 import { Card, Container } from 'react-bootstrap';
 import { FcGoogle } from 'react-icons/fc';
 import { Link } from 'react-router-dom';
-// import useFirebase from '../../hooks/useFirebase';
 import { useHistory, useLocation } from "react-router";
 import "./Register.css"
 import useAuth from '../../hooks/useAuth';
 const Register = () => {
-  const { handleGoogleSignIn, setUser, setError } = useAuth();
+  const { handleGoogleSignIn, setUser, setError, setIsLoading } = useAuth();
 
   const location = useLocation();
   const history = useHistory();
@@ -18,8 +17,10 @@ const Register = () => {
       .then(result => {
         setUser(result.user)
         history.push(redirectUrl)
+
       })
       .catch(err => setError(err))
+      .finally(() => setIsLoading(false))
   }
   return (
     <div className="login d-flex align-items-center">

@@ -20,6 +20,7 @@ const Login = () => {
       .then(result => {
         setUser(result.user)
         history.push(redirectUrl)
+
       })
       .catch(err => setError(err))
       .finally(() => setIsLoading(false));

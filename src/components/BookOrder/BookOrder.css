@@ -1,0 +1,11 @@
+.book-order-form {
+  margin: 80px 0;
+  width: 280px;
+}
+.book-order-form input {
+  margin: 10px 0;
+}
+.book-order-form :not(input[type="submit"]) {
+  line-height: 40px;
+  padding: 0 15px;
+}

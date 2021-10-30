@@ -20,10 +20,10 @@ const Header = () => {
             <Nav className="ms-auto links d-flex justify-content-center align-items-center">
               <NavLink className="px-4 " activeStyle={activeStyle} to="/home">Home</NavLink>
               {user?.displayName || user?.email ?
-                <div className="user-info d-flex justify-content-center align-items-center  ">
+                <div className="user-info d-flex flex-column flex-lg-row justify-content-center align-items-center  ">
                   <h5 className="text-white mt-2">{user.displayName}</h5>
                   <img className="user-photo ms-3" src={user?.photoURL ? user?.photoURL : "https://img.icons8.com/bubbles/2x/ffffff/user.png"} alt="" />
-                  <button className="ms-3 button" onClick={handleSingOut}>signOut</button>
+                  <button className="ms-3 button my-3 my-lg-0" onClick={handleSingOut}>signOut</button>
                 </div> :
                 <div>
                   <NavLink className="px-4 " activeStyle={activeStyle} to="/login">Login</NavLink>

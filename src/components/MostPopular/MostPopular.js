@@ -4,7 +4,7 @@ import "./MostPopular.css"
 const MostPopular = () => {
   const [popularServices, setPopularServices] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/popular")
+    fetch("https://radiant-peak-15690.herokuapp.com/popular")
       .then(res => res.json())
       .then(data => setPopularServices(data))
   }, [])

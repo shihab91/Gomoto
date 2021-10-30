@@ -15,6 +15,7 @@ import Services from './components/services/Services';
 import AuthProvider from './context/AuthProvider'
 import ServiceDetail from './components/serviceDetail/ServiceDetail';
 import NotFound from './components/NotFound/NotFound';
+import BookOrder from './components/BookOrder/BookOrder';
 function App() {
   return (
     <div className="App">
@@ -34,8 +35,11 @@ function App() {
             <Route path="/register">
               <Register></Register>
             </Route>
-            <Route path="/services/:id">
+            <PrivateRoute path="/services/:id">
               <ServiceDetail></ServiceDetail>
+            </PrivateRoute>
+            <Route path="/bookOrder/:id">
+              <BookOrder></BookOrder>
             </Route>
             <Route path="*">
               <NotFound></NotFound>
