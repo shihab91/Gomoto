@@ -4,7 +4,7 @@ import "./MostPopular.css"
 const MostPopular = () => {
   const [popularServices, setPopularServices] = useState([]);
   useEffect(() => {
-    fetch("./mostPopular.json")
+    fetch("http://localhost:5000/popular")
       .then(res => res.json())
       .then(data => setPopularServices(data))
   }, [])
@@ -16,7 +16,7 @@ const MostPopular = () => {
           {
             popularServices.map(((service, index) => <Col key={index}>
               <Card className="d-flex flex-row align-items-center justify-content-center p-3 border-0 popular-card ">
-                <Card.Img className="card-img" src={service.image} alt={service.image}></Card.Img>
+                <Card.Img className="card-image" src={service.image} alt={service.image}></Card.Img>
                 <Card.Body>
                   <Card.Title className="ps-2">{service.name}</Card.Title>
                 </Card.Body>

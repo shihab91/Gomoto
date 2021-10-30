@@ -13,7 +13,7 @@ const Subscribe = () => {
             </div>
             <img className="subscribe-img me-md-4" src="https://elementor.detheme.com/deliventure/wp-content/uploads/sites/46/2021/08/african-american-delivery-man-posing-with-thermo-b-MF95KTL.jpg" alt="" />
           </div>
-          <div className="input ms-4  ">
+          <div className="input ms-md-4  ">
             <h3 className="mb-3 pt-5">Subscribe Newsletter</h3>
             <input type="email" className="mt-3" placeholder="Email" />
             <button className="button mt-3">Subscribe</button>

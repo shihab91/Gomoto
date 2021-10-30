@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Air Freight",
+    "description": "Air cargo is any property carried or to be carried in an aircraft. Air cargo comprises air freight, air express and airmail.",
+    "image": "https://media.istockphoto.com/photos/loading-cargo-into-a-boeing-747-picture-id117952890?b=1&k=20&m=117952890&s=170667a&w=0&h=iHaEGrrzNTBrU6Ip-m77x0OrHtrKIcxEBqxeAEOaoMo="
+  },
+  {
+    "name": "Ocean Freight",
+    "description": "Book ocean freight shipping services easily with iContainers. Our platform offers you instant quotes, full price transparency and round-the-clock sea freight tracking.",
+    "image": "https://images.unsplash.com/photo-1522674149721-b0191358dc5c?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8b2NlYW4lMjBmcmVpZ2h0fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+  },
+  {
+    "name": "Contract Logistics",
+    "description": " Contract logistics companies handle activities such as designing and planning supply chains, designing facilities, warehousing, transporting and distributing goods, processing orders and collecting payments, managing inventory and even providing certain aspects of customer service.",
+    "image": "https://media.istockphoto.com/photos/partnered-up-to-deliver-a-premium-logistics-service-picture-id505374210?b=1&k=20&m=505374210&s=170667a&w=0&h=eAxekNZwjL_gTvqsBriRxwUh75OEK0lqW8-DjIcTwXU=  "
+  },
+  {
+    "name": "Road & Rail Freight",
+    "description": "Samer offers the full array of multimodal, door-to-door solutions by linking the advantages of road and rail transport with air and ocean freight services to help you manage your complex supply chain.",
+    "image": "https://media.istockphoto.com/photos/aerial-view-of-rail-classification-yard-the-macmillan-yard-maple-picture-id1340284465?b=1&k=20&m=1340284465&s=170667a&w=0&h=C976pAvzfp8mPLqqt0ZrfsRRGuhF_SmmHDTjrD957pg="
+  },
+  {
+    "name": "Multimodal Transport",
+    "description": "Multimodal transport is the transportation of goods under a single contract, but performed with at least two different modes of transport; the carrier is liable for the entire carriage, even though it is performed by several different modes of transport. ",
+    "image": "https://media.istockphoto.com/photos/lorry-truck-driving-along-highway-picture-id1280413014?b=1&k=20&m=1280413014&s=170667a&w=0&h=aAKvxpM2NeUKdpKosdwS2eKOwnfAaY-BrDGQ6_cM8Yc="
+  },
+  {
+    "name": "Supply Chain Solutions",
+    "description": "Good process leads to real results. With Supply Chain Solutions, we combine a process-driven approach with action to deliver measurable business value. So you can be more efficient. Leaner. More agile. So you can free up cash flow.",
+    "image": "https://media.istockphoto.com/photos/automated-robot-carriers-in-modern-distribution-warehouse-picture-id1054014482?b=1&k=20&m=1054014482&s=170667a&w=0&h=bo44qfzTIAp8qbU2CNxPD8t4Z6_5lZhlzRQkIUORE88="
+  }
+]

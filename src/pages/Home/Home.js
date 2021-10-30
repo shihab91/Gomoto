@@ -5,12 +5,15 @@ import Services from '../../components/services/Services';
 import Subscribe from '../../components/Subscribe/Subscribe';
 
 const Home = () => {
+
   return (
     <div>
+
       <Banner></Banner>
       <MostPopular></MostPopular>
       <Subscribe />
-      {/* <Services></Services> */}
+
+      <Services></Services>
     </div>
   );
 };

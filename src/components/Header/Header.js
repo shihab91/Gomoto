@@ -5,7 +5,6 @@ import useFirebase from '../../hooks/useFirebase';
 import "./Header.css"
 const Header = () => {
   const { user, handleSingOut } = useFirebase();
-  console.log(user);
   const activeStyle = {
     color: "var(--yellow-color)"
   }
@@ -14,7 +13,7 @@ const Header = () => {
       <Navbar className="gomoto-navbar" expand="lg">
         <Container>
           <Navbar.Brand><NavLink to="/home">
-            <img className="logo" src="http://gomoto.like-themes.com/wp-content/uploads/2019/06/logo_1x.png" alt="" />
+            <img className="logo" src="https://i.ibb.co/Qp4khmw/logo-1x.png" alt="" />
           </NavLink></Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
@@ -29,12 +28,9 @@ const Header = () => {
                 <div>
                   <NavLink className="px-4 " activeStyle={activeStyle} to="/login">Login</NavLink>
                   <NavLink className="px-4 " activeStyle={activeStyle} to="/register">Register</NavLink>
-                  <NavLink className="px-4 " activeStyle={activeStyle} to="/services">services</NavLink>
                 </div>
-
               }
-
-
+              <NavLink className="px-4 " activeStyle={activeStyle} to="/services">services</NavLink>
             </Nav>
           </Navbar.Collapse>
         </Container>

@@ -10,21 +10,21 @@ const Footer = () => {
           <div className="contact d-flex justify-content-center align-items-center flex-column flex-md-row" >
             <div className="me-md-4 d-flex flex-column flex-lg-row justify-content-center align-items-center">
               <img className="call-icon" src="https://img.icons8.com/ios-filled/2x/phone.png" alt="" />
-              <div>
+              <div className="ps-md-2">
                 <p className="m-0"> Call us to make order now</p>
-                <h4 className="m-0">90-500-28-999</h4>
+                <h4 className="m-0 fw-bold">90-500-28-999</h4>
               </div>
             </div>
             <div className="ms-md-4 mt-4 mt-md-0 d-flex flex-column flex-lg-row justify-content-center align-items-center">
               <img className="email-icon" src="https://img.icons8.com/external-kiranshastry-lineal-kiranshastry/2x/external-email-multimedia-kiranshastry-lineal-kiranshastry-1.png" alt="" />
-              <div>
+              <div className="ps-md-2">
                 <p className="m-0"> Mail us to make order now</p>
-                <h4 className="m-0">Shumonshihab449@gamil.com</h4>
+                <h4 className="m-0 fw-bold ">Shumonshihab449@gamil.com</h4>
               </div>
             </div>
           </div>
           <div className="my-4 text-center ">
-            <img src="http://gomoto.like-themes.com/wp-content/uploads/2019/06/logo_1x.png" alt="" />
+            <img src="https://i.ibb.co/Qp4khmw/logo-1x.png" alt="" />
             <p className="mt-3 footer-text">These days you can get virtually anything delivered from <br /> your phone directly to you. Gomoto will send a car to pick you up. </p>
           </div>
           <div>

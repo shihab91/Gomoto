@@ -12,30 +12,42 @@ import Login from './components/login/Login';
 import Register from './components/Register/Register';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 import Services from './components/services/Services';
+import AuthProvider from './context/AuthProvider'
+import ServiceDetail from './components/serviceDetail/ServiceDetail';
+import NotFound from './components/NotFound/NotFound';
 function App() {
   return (
     <div className="App">
-      <Router>
-        <Header></Header>
-        <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route path="/home">
-            <Home />
-          </Route>
-          <Route path="/login">
-            <Login></Login>
-          </Route>
-          <Route path="/register">
-            <Register></Register>
-          </Route>
-          <PrivateRoute>
-            <Services></Services>
-          </PrivateRoute>
-        </Switch>
-        <Footer />
-      </Router>
+      <AuthProvider>
+        <Router>
+          <Header></Header>
+          <Switch>
+            <Route exact path="/">
+              <Home />
+            </Route>
+            <Route path="/home">
+              <Home />
+            </Route>
+            <Route path="/login">
+              <Login></Login>
+            </Route>
+            <Route path="/register">
+              <Register></Register>
+            </Route>
+            <Route path="/services/:id">
+              <ServiceDetail></ServiceDetail>
+            </Route>
+            <Route path="*">
+              <NotFound></NotFound>
+            </Route>
+
+            {/* <PrivateRoute path="/services">
+              <Services></Services>
+            </PrivateRoute> */}
+          </Switch>
+          <Footer />
+        </Router>
+      </AuthProvider>
     </div>
   );
 }

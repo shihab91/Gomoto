@@ -3,10 +3,19 @@ import {
   Route,
   Redirect
 } from "react-router-dom";
-import useFirebase from '../../hooks/useFirebase';
+import useAuth from '../../hooks/useAuth';
+import { PushSpinner } from "react-spinners-kit";
 
 const PrivateRoute = ({ children, ...rest }) => {
-  const { user } = useFirebase();
+  const { user, isLoading } = useAuth();
+  const loading = true;
+  if (isLoading) {
+    <PushSpinner
+      size={30}
+      color="#686769"
+      loading={loading}
+    />
+  }
   return (
     <Route
       {...rest}
