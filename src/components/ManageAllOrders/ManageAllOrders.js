@@ -13,7 +13,7 @@ const ManageAllOrders = () => {
       })
   }, [])
   const handleDeleteOrder = (id) => {
-    fetch(`http://localhost:4000/orders/${id}`, {
+    fetch(`https://radiant-peak-15690.herokuapp.com/orders/${id}`, {
       method: 'DELETE'
     })
       .then(res => res.json())

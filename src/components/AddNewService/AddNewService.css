@@ -1,0 +1,15 @@
+.add-new-service-container {
+  margin: 150px 0;
+}
+.add-new-service-label {
+  font-size: 20px;
+  border: none !important;
+  padding: 0 !important;
+}
+.add-new-service-form :not(input[type="submit"]) {
+  width: 250px;
+  margin: 0 0 15px;
+  border: 1px solid var(--yellow-color);
+  padding: 8px 10px;
+  border-radius: 5px;
+}

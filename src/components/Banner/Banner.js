@@ -13,7 +13,7 @@ const Banner = () => {
             <button className="button">Read More</button>
           </div>
           <div className="banner-img py-5 py-lg-0 ">
-            <img className="img-fluid" src="http://gomoto.like-themes.com/wp-content/uploads/2020/04/slider-courier-mask.png" alt="" />
+            <img className="img-fluid" src="https://i.ibb.co/LhL4Pmb/slider-courier-mask.png" alt="" />
           </div>
         </div>
       </Container>

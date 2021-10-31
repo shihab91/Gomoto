@@ -9,9 +9,14 @@ const BookOrder = () => {
   const { id } = useParams();
   const [bookOrderedService, setBookOrderedService] = useState();
   const { register, handleSubmit, reset } = useForm();
+  useEffect(() => {
+    fetch(`https://radiant-peak-15690.herokuapp.com/services/${id}`)
+      .then(res => res.json())
+      .then(data => setBookOrderedService(data))
+  }, [])
   const onSubmit = data => {
-    data.image = bookOrderedService.image;
-    data.serviceName = bookOrderedService.name;
+    data.image = bookOrderedService?.image;
+    data.serviceName = bookOrderedService?.name;
     data.status = "pending";
     fetch("https://radiant-peak-15690.herokuapp.com/orders", {
       method: "POST",
@@ -27,11 +32,7 @@ const BookOrder = () => {
         }
       })
   }
-  useEffect(() => {
-    fetch(`https://radiant-peak-15690.herokuapp.com/services/${id}`)
-      .then(res => res.json())
-      .then(data => setBookOrderedService(data))
-  }, [])
+
 
   return (
     <div>

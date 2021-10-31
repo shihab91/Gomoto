@@ -21,8 +21,9 @@ const Header = () => {
               <NavLink className="px-4 me-lg-4" activeStyle={activeStyle} to="/home">Home</NavLink>
               {user?.displayName || user?.email ?
                 <div className="user-info d-flex flex-column flex-lg-row justify-content-center align-items-center  ">
-                  <NavLink to="/MyOrders" className="me-lg-5">My Orders</NavLink>
-                  <NavLink to="/manageAllOrders" className="me-lg-5">Manage All Orders</NavLink>
+                  <NavLink to="/MyOrders" className="me-lg-4 my-2 my-lg-0 ">My Orders</NavLink>
+                  <NavLink to="/manageAllOrders" className="me-lg-4 my-2 my-lg-0">Manage All Orders</NavLink>
+                  <NavLink className="me-lg-4  my-2 my-lg-0" activeStyle={activeStyle} to="/addNewService">Add New Service</NavLink>
                   <h5 className="text-white mt-2">{user.displayName}</h5>
                   <img className="user-photo ms-3" src={user?.photoURL ? user?.photoURL : "https://img.icons8.com/bubbles/2x/ffffff/user.png"} alt="" />
                   <button className="ms-3 button my-3 my-lg-0" onClick={handleSingOut}>signOut</button>
@@ -32,7 +33,7 @@ const Header = () => {
                   <NavLink className="px-4 " activeStyle={activeStyle} to="/register">Register</NavLink>
                 </div>
               }
-              <NavLink className="px-4 " activeStyle={activeStyle} to="/services">services</NavLink>
+
             </Nav>
           </Navbar.Collapse>
         </Container>

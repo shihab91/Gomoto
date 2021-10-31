@@ -18,6 +18,7 @@ import NotFound from './components/NotFound/NotFound';
 import BookOrder from './components/BookOrder/BookOrder';
 import MyOrders from './components/MyOrders/MyOrders';
 import ManageAllOrders from './components/ManageAllOrders/ManageAllOrders';
+import AddNewService from './components/AddNewService/AddNewService';
 function App() {
   return (
     <div className="App">
@@ -48,6 +49,9 @@ function App() {
             </PrivateRoute>
             <PrivateRoute path="/manageAllOrders">
               <ManageAllOrders></ManageAllOrders>
+            </PrivateRoute>
+            <PrivateRoute path="/addNewService">
+              <AddNewService></AddNewService>
             </PrivateRoute>
             <Route path="*">
               <NotFound></NotFound>

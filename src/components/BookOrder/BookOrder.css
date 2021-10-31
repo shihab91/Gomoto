@@ -13,7 +13,7 @@
   font-family: "Catamaran", sans-serif;
   border-radius: 5px;
 }
-.book-order-form input[type="submit"] {
+input[type="submit"] {
   width: 150px;
   padding: 7px 15px;
   border: 1px solid var(--yellow-color);
