@@ -3,10 +3,11 @@ import { Card, Col, Container, Row } from 'react-bootstrap';
 import { BsArrowRightSquare } from "react-icons/bs";
 import { useHistory } from 'react-router';
 import { AiFillDelete } from "react-icons/ai";
-
+import useAuth from '../../hooks/useAuth';
 import "./Services.css"
 const Services = () => {
   const [services, setServices] = useState([]);
+  const { user } = useAuth();
   const history = useHistory();
   const handleServiceDetail = (id) => {
     history.push(`/services/${id}`)
@@ -45,7 +46,10 @@ const Services = () => {
                   {service.description.slice(0, 100)}....
                 </Card.Text>
                 <button onClick={() => { handleServiceDetail(service._id) }} className="see-more">See more <BsArrowRightSquare /></button>
-                <button onClick={() => { handleDeleteService(service._id) }} className="see-more ms-3">Delete <AiFillDelete /></button>
+                {user.displayName &&
+                  <button onClick={() => { handleDeleteService(service._id) }} className="see-more ms-3">Delete <AiFillDelete /></button>
+
+                }
               </Card.Body>
             </Card>
           </Col>)

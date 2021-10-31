@@ -36,6 +36,7 @@ const ManageAllOrders = () => {
                 <Card.Img src={myOrder.image} className="my-order-image"></Card.Img>
                 <Card.Body className="ps-2 pe-0 pt-0">
                   <Card.Title>{myOrder.serviceName}</Card.Title>
+                  <small className="d-block">{myOrder.status}</small>
                   <Button variant="danger" className="mt-3" onClick={() => handleDeleteOrder(myOrder._id)}>Delete</Button>
                 </Card.Body>
               </Card>
