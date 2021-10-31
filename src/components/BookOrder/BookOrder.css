@@ -1,5 +1,5 @@
 .book-order-form {
-  margin: 80px 0;
+  margin: 180px 0 170px 0;
   width: 280px;
 }
 .book-order-form input {
@@ -8,4 +8,15 @@
 .book-order-form :not(input[type="submit"]) {
   line-height: 40px;
   padding: 0 15px;
+  border: 1px solid var(--yellow-color);
+  font-size: 18px;
+  font-family: "Catamaran", sans-serif;
+  border-radius: 5px;
+}
+.book-order-form input[type="submit"] {
+  width: 150px;
+  padding: 7px 15px;
+  border: 1px solid var(--yellow-color);
+  background: var(--yellow-color);
+  font-size: 20px;
 }

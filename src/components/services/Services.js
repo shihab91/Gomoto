@@ -14,7 +14,6 @@ const Services = () => {
     fetch("https://radiant-peak-15690.herokuapp.com/services")
       .then(res => res.json())
       .then(data => {
-        console.log(data);
         setServices(data)
       })
   }, [])
